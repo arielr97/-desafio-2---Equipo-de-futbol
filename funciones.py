@@ -15,18 +15,11 @@ def mostrar_matriz(matriz: list):
     print("-Ha seleccionado ver la información de todos los jugadores-\n")
     for i in range(len(matriz)):
         print(f"#Jugador {i+1}: ")
-        for j in range(len(matriz[i])):
-            match j:
-                case 0:
-                    print(f"Nombre del jugador {i+1}: {matriz[i][j]}")
-                case 1:
-                    print(f"Apellido del jugador {i+1}: {matriz[i][j]}")
-                case 2:
-                    print(f"Edad del jugador {i+1}: {matriz[i][j]}")
-                case 3:
-                    print(f"Posición en la que juega el jugador {i+1}: {matriz[i][j]}")
-                case _:
-                    print(f"Goles que lleva en el torneo el jugador {i+1}: {matriz[i][j]}")
+        print(f"Nombre del jugador {i+1}: {matriz[i][0]}")
+        print(f"Apellido del jugador {i+1}: {matriz[i][1]}")
+        print(f"Edad del jugador {i+1}: {matriz[i][2]}")
+        print(f"Posición en la que juega el jugador {i+1}: {matriz[i][3]}")
+        print(f"Goles que lleva en el torneo el jugador {i+1}: {matriz[i][4]}")
         print("")
 
 def modificar_matriz(matriz: list):
